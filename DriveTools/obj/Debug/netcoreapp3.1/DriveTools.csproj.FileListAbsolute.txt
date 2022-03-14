@@ -1,0 +1,13 @@
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.csproj.AssemblyReference.cache
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.GeneratedMSBuildEditorConfig.editorconfig
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.AssemblyInfoInputs.cache
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.AssemblyInfo.cs
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.csproj.CoreCompileInputs.cache
+/Users/idan/Projects/DriveTools/DriveTools/bin/Debug/netcoreapp3.1/DriveTools.deps.json
+/Users/idan/Projects/DriveTools/DriveTools/bin/Debug/netcoreapp3.1/DriveTools.runtimeconfig.json
+/Users/idan/Projects/DriveTools/DriveTools/bin/Debug/netcoreapp3.1/DriveTools.runtimeconfig.dev.json
+/Users/idan/Projects/DriveTools/DriveTools/bin/Debug/netcoreapp3.1/DriveTools.dll
+/Users/idan/Projects/DriveTools/DriveTools/bin/Debug/netcoreapp3.1/DriveTools.pdb
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.dll
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.pdb
+/Users/idan/Projects/DriveTools/DriveTools/obj/Debug/netcoreapp3.1/DriveTools.genruntimeconfig.cache
