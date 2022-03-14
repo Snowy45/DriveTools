@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/idan/Projects/DriveTools/DriveTools/DriveTools.csproj": {}
+    "/Users/idan/Documents/GitHub/DriveTools/DriveTools/DriveTools.csproj": {}
   },
   "projects": {
-    "/Users/idan/Projects/DriveTools/DriveTools/DriveTools.csproj": {
+    "/Users/idan/Documents/GitHub/DriveTools/DriveTools/DriveTools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/idan/Projects/DriveTools/DriveTools/DriveTools.csproj",
+        "projectUniqueName": "/Users/idan/Documents/GitHub/DriveTools/DriveTools/DriveTools.csproj",
         "projectName": "DriveTools",
-        "projectPath": "/Users/idan/Projects/DriveTools/DriveTools/DriveTools.csproj",
+        "projectPath": "/Users/idan/Documents/GitHub/DriveTools/DriveTools/DriveTools.csproj",
         "packagesPath": "/Users/idan/.nuget/packages/",
-        "outputPath": "/Users/idan/Projects/DriveTools/DriveTools/obj/",
+        "outputPath": "/Users/idan/Documents/GitHub/DriveTools/DriveTools/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/idan/.config/NuGet/NuGet.Config"
