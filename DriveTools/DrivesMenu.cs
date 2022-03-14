@@ -142,11 +142,13 @@ namespace DriveTools
             Console.WriteLine("In case you encounter any problems while navigating \ninside the drive you can refer to this help section;");
             Console.WriteLine("");
             Console.WriteLine("Help/Navigation Commands:\n--------------------------\n");
+            Console.WriteLine("back - Go back to the drivers list");
             Console.WriteLine("files - Get a list of all the files and folders in the current directory");
             Console.WriteLine("expand(ex,exp) <directory> - Expands to the specified folder and lets you retrive data from there");
             Console.WriteLine("predi(pd) - Go back to the previous directory");
             Console.WriteLine("delete(del) <file/directory) - Delete specified file/folder");
             Console.WriteLine("create(crt) <extension> - Creates a file with the specified extension");
+            
 
             utils.tColor(ConsoleColor.Magenta);
             utils.CreateEmptySpace(2);

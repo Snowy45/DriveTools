@@ -10,7 +10,7 @@ namespace DriveTools
         static void Main(string[] args)
         {
 
-            Console.Title = "DriveTools";
+            Console.Title = "DriveTool";
 
 
 
