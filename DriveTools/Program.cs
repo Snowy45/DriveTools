@@ -10,7 +10,7 @@ namespace DriveTools
         static void Main(string[] args)
         {
 
-            Console.Title = "DriveTool";
+            Console.Title = "DriveTools";
 
 
 
@@ -25,7 +25,7 @@ namespace DriveTools
 
     class MainMenu
     {
-        static string[] options = { "Drives Data", "Create Files", "Encrypt/Decrypt Files" };
+        static string[] options = { "Drives Data", "Exit"};
         static int optionsIndex = 0;
         static int reDrawFrom;
         public static int currentTopPos;
@@ -35,6 +35,7 @@ namespace DriveTools
         public static void LoadMainMenu()
         {
             Console.Clear();
+            
 
             utils.CreateTitle();
             utils.CreateEmptySpace(2);
@@ -85,9 +86,7 @@ namespace DriveTools
                             DrivesMenu.LoadDrivesMenu();
                             break;
                         case 1:
-
-                            break;
-                        case 2:
+                            Environment.Exit(0);
                             break;
                     }
                 }

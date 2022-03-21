@@ -14,7 +14,7 @@
         "outputPath": "/Users/idan/Documents/GitHub/DriveTools/DriveTools/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/idan/.config/NuGet/NuGet.Config"
+          "/Users/idan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

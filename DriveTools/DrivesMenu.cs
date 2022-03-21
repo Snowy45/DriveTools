@@ -148,7 +148,11 @@ namespace DriveTools
             Console.WriteLine("predi(pd) - Go back to the previous directory");
             Console.WriteLine("delete(del) <file/directory) - Delete specified file/folder");
             Console.WriteLine("create(crt) <extension> - Creates a file with the specified extension");
-            
+            Console.WriteLine("el - List sEncryption Formats");
+            Console.WriteLine("Encrypt(enc) <Encryption Type> <file> - Encrypts a file | NOTE: On mac only text inside the files could be encrypted");
+            Console.WriteLine("Decrypt(enc) Optional<Decryption Type> <file> - Tries to decrypt a file with avalible decryption methods a file | Optional: You could specify a decryption format");
+            Console.WriteLine("Mail(m) <file> <To> - Sends a mail to specified addresess containing the file");
+
 
             utils.tColor(ConsoleColor.Magenta);
             utils.CreateEmptySpace(2);
