@@ -33,7 +33,7 @@ to change the CommandListener class inteslf and have it update to the other comm
 aware that changing the CommandListener class and the general stracture of the program can make it not
 work properly if done poorly
 
-###Register The Command
+### Register The Command
 After you created the command file it won't automatically load into the program
 instead you will need to register the command into the event that it uses.
 TODO that got to the **Program.cs** file and into the **LoadCommands()** function,
