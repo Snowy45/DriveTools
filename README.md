@@ -37,8 +37,9 @@ work properly if done poorly
 After you created the command file it won't automatically load into the program
 instead you will need to register the command into the event that it uses.
 TODO that got to the **Program.cs** file and into the **LoadCommands()** function,
-inside add the following lines in order to register the command:          
-*Keep in mind to try and use the same naming conventions the program uses*
+inside add the following lines in order to register the command:  
+<a href="https://i.ibb.co/b35LwC7/Command-In-Action.png">Command Example</a>
+
 ```
  public static void LoadCommands()
  {
@@ -50,5 +51,6 @@ inside add the following lines in order to register the command:
       Drive.DriveCommand += testCMD.OnDriveCommand;
 }
 ```
+*Keep in mind to try and use the same naming conventions the program uses*
 
 
