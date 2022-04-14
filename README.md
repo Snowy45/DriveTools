@@ -28,8 +28,8 @@ Once you created the command file make it extend the CommandListener class as sh
 ```
 public class TestCommand : CommandListener
 ```
-The CommandListener class allows the program to track changes across all commands and allows you
-to change the CommandListener class inteslf and have it update to the other commands, however be 
+The **CommandListener** class allows the program to track changes across all commands and allows you
+to change the class inteslf and have it update to the other commands, however be 
 aware that changing the CommandListener class and the general stracture of the program can make it not
 work properly if done poorly
 
