@@ -1,10 +1,11 @@
  
-┏━━━┓╋╋╋╋╋╋╋┏━━━━┓╋╋╋╋┏┓╋╋╋╋ ╋┏┓╋┏━━━┓
-┗┓┏┓┃╋╋╋╋╋╋╋┃┏┓┏┓┃╋╋╋╋┃┃╋╋╋╋ ┏┛┃╋┃┏━┓┃
-╋┃┃┃┣━┳┳┓┏┳━┻┫┃┃┣┻━┳━━┫┃┏━━┓ ┗┓┃╋┃┃┃┃┃
-╋┃┃┃┃┏╋┫┗┛┃┃━┫┃┃┃┏┓┃┏┓┃┃┃━━┫ ╋┃┃╋┃┃┃┃┃
-┏┛┗┛┃┃┃┣┓┏┫┃━┫┃┃┃┗┛┃┗┛┃┗╋━━┃ ┏┛┗┳┫┗━┛┃
-┗━━━┻┛┗┛┗┛┗━━┛┗┛┗━━┻━━┻━┻━━┛ ┗━━┻┻━━━┛
+┏━━━┓╋╋╋╋╋╋╋┏━━━━┓╋╋╋╋┏┓╋╋╋╋ ╋┏┓╋┏━━━┓<br>
+┗┓┏┓┃╋╋╋╋╋╋╋┃┏┓┏┓┃╋╋╋╋┃┃╋╋╋╋ ┏┛┃╋┃┏━┓┃<br>
+╋┃┃┃┣━┳┳┓┏┳━┻┫┃┃┣┻━┳━━┫┃┏━━┓ ┗┓┃╋┃┃┃┃┃<br>
+╋┃┃┃┃┏╋┫┗┛┃┃━┫┃┃┃┏┓┃┏┓┃┃┃━━┫ ╋┃┃╋┃┃┃┃┃<br>
+┏┛┗┛┃┃┃┣┓┏┫┃━┫┃┃┃┗┛┃┗┛┃┗╋━━┃ ┏┛┗┳┫┗━┛┃<br>
+┗━━━┻┛┗┛┗┛┗━━┛┗┛┗━━┻━━┻━┻━━┛ ┗━━┻┻━━━┛<br>
+[Creating a new Command](#creating-the-command) | [Registering Commands](#register-the-command)
 #
 DriveTools is a console application designed to act as a tool to help
 you do navigation and more complex operations inside your computer.
@@ -37,7 +38,7 @@ work properly if done poorly
 After you created the command file it won't automatically load into the program
 instead you will need to register the command into the event that it uses.
 TODO that got to the **Program.cs** file and into the **LoadCommands()** function,
-inside add the following lines in order to register the command:  
+inside add the following lines in order to register the command:<br>
 <a href="https://i.ibb.co/b35LwC7/Command-In-Action.png">Command Example</a>
 
 ```
