@@ -19,11 +19,11 @@ And much more to come.
 # How to Modify
 DriveTools was meant to be very easy to modify and add your own
 code on top of it, underneath is a tutorial explaining how to modify 
-the code and add your one.
+the code and add your own.
 ## How to add Custom Commands
 ### Creating The Command
-In order to create a command that would be easy to access and to read
-first of all you need to create a new file inside the commands folder.
+In order to create a command that would be easy to access and to read,
+first of all you will need to create a new file inside the commands folder.
 <img src="https://i.ibb.co/kSFmKtz/Create-ACommand-File.jpg" alt="commandCreating"/>
 Once you created the command file make it extend the CommandListener class as showed in the example
 ```
