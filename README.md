@@ -36,8 +36,8 @@ work properly if done poorly
 
 ### Register The Command
 After you created the command file it won't automatically load into the program
-instead you will need to register the command into the event that it uses.
-TODO that got to the **Program.cs** file and into the **LoadCommands()** function,
+instead you will need to register the command into the event that it uses.<br>
+In order to regster the command go to the **Program.cs** file and into the **LoadCommands()** function,
 inside add the following lines in order to register the command:<br>
 <a href="https://i.ibb.co/b35LwC7/Command-In-Action.png">Command Example</a>
 
