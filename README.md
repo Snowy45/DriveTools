@@ -5,7 +5,7 @@
 ╋┃┃┃┃┏╋┫┗┛┃┃━┫┃┃┃┏┓┃┏┓┃┃┃━━┫ ╋┃┃╋┃┃┃┃┃<br>
 ┏┛┗┛┃┃┃┣┓┏┫┃━┫┃┃┃┗┛┃┗┛┃┗╋━━┃ ┏┛┗┳┫┗━┛┃<br>
 ┗━━━┻┛┗┛┗┛┗━━┛┗┛┗━━┻━━┻━┻━━┛ ┗━━┻┻━━━┛<br>
-[Creating a new Command](#creating-the-command) | [Registering Commands](#register-the-command)
+[Creating a new Command](#creating-the-command) | [Registering Commands](#register-the-command) | [List of the Commands](#commands-list)
 #
 DriveTools is a console application designed to act as a tool to help
 you do navigation and more complex operations inside your computer.
@@ -54,4 +54,26 @@ inside add the following lines in order to register the command:<br>
 ```
 *Keep in mind to try and use the same naming conventions the program uses*
 
-
+## Commands List
+[Navigation Commands](#navigation-commands) | [Action Commands](#action-commands)<br>
+Down below is a list of all the commands currently in the program aswell as explaination and how to use them.
+The list will be updated with the program and you can suggest commands that should be added.
+### Navigation Commands
+expand(ex,exp) - The *ex* command is used to change your current directory. For example: users/documents -> users/documents/MyFolder<br>
+**Usage**: ```ex <Directory To Expand> | Example: ex myfolder```
+# 
+previous directory(pd,predi) - The *pd* command is used in order to go back one directory. For example: users/document/MyFolder -> users/documents<br>
+**Usage**: ```pd```
+#
+back(back) - The *back* command is used to go back to the drives list, this will clean the command history and change your menu.<br>
+**Usage**: ```back```
+#
+files list(fl) - The *fl* command is used to see the files and folders inside your current directory, the command will print a list of the items inside your current directory and the last date they were modified.<br>
+**Usage**: ```fl```
+#
+### Action Commands
+create(crt) - the *crt* command is used in order to create new files on the computer, the files will be created in your current directory if you got permission to write into that directory.<br>
+**Usage**: ```crt <File/Directory> <Name> | Example: crt -f Notes.txt```
+#
+delete(del) - the *del* command is used to delete files/directories in your current directory. Be aware that files you delete won't come back and will not appear in trash bin.<br>
+**Usage**: ```del <File/Directory> <Name> | Example: del -f Notes.txt```
