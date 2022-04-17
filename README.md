@@ -73,7 +73,16 @@ files list(fl) - The *fl* command is used to see the files and folders inside yo
 #
 ### Action Commands
 create(crt) - the *crt* command is used in order to create new files on the computer, the files will be created in your current directory if you got permission to write into that directory.<br>
-**Usage**: ```crt <File/Directory> <Name> | Example: crt -f Notes.txt```
+**Usage**: ```crt <-f/-d> <Name> | Example: crt -f Notes.txt```<br>
+*Notes*: -f = file | -d = directory
 #
 delete(del) - the *del* command is used to delete files/directories in your current directory. Be aware that files you delete won't come back and will not appear in trash bin.<br>
-**Usage**: ```del <File/Directory> <Name> | Example: del -f Notes.txt```
+**Usage**: ```del <-f/-d> <Name> | Example: del -f Notes.txt```<br>
+*Notes*: -f = file | -d = directory
+#
+fping(fping) - The *fping* command is a scan command that is used to locate files that have a key word or the sentence that you entered into the scan,
+For example: if the key word is: *sun* then it will both find: sun.png, here comes the sun.mp3.<br>
+**Usage**: ```fping <-r/-s> <num> <keyword/sentence> | Example: fping -s 4 sun```<br>
+*Notes*: -r = resualts, this will return the resualts of the scan | -s = scan, this will make the scan | num = num is an argument in both functions.
+  * In **-r**, num is used to decide how much of the resualts will be printed(in case you have many), you can also just ingore it.
+  * In **-s**, num is used to decide how deep is the search gonna be, 1 is for the current directory, 2 is for the current one and every directory           inside of it and so on.
