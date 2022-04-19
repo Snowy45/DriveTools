@@ -1,31 +1,48 @@
 ﻿using System;
+using DriveTools.Comamnds;
 
 namespace DriveTools
 {
     class Program
     {
-
-
-
         static void Main(string[] args)
         {
+            LoadCommands();
+
 
             Console.Title = "DriveTools";
-
-
-
-
-
             MainMenu.LoadMainMenu();
+            
         }
 
+        public static void LoadCommands()
+        {
+            // Commands
+            FilesCommand filesCMD = new FilesCommand();
+            BackCommand backCMD = new BackCommand();
+            ExpandCommand expandCMD = new ExpandCommand();
+            PreviousCommand prediCMD = new PreviousCommand();
+            DeleteCommand deleteCMD = new DeleteCommand();
+            CreateCommand createCMD = new CreateCommand();
+            HelpCommand helpCMD = new HelpCommand();
+            FilePingCommand filePingCMD = new FilePingCommand();
 
 
+            //Subscribe to Event
+            Drive.DriveCommand += filesCMD.OnDriveCommand;
+            Drive.DriveCommand += backCMD.OnDriveCommand;
+            Drive.DriveCommand += expandCMD.OnDriveCommand;
+            Drive.DriveCommand += prediCMD.OnDriveCommand;
+            Drive.DriveCommand += deleteCMD.OnDriveCommand;
+            Drive.DriveCommand += createCMD.OnDriveCommand;
+            Drive.DriveCommand += helpCMD.OnDriveCommand;
+            Drive.DriveCommand += filePingCMD.OnDriveCommand;
+        }
     }
 
     class MainMenu
     {
-        static string[] options = { "Drives Data", "Create Files", "Encrypt/Decrypt Files" };
+        static string[] options = { "Drives Data", "Exit" };
         static int optionsIndex = 0;
         static int reDrawFrom;
         public static int currentTopPos;
@@ -35,6 +52,7 @@ namespace DriveTools
         public static void LoadMainMenu()
         {
             Console.Clear();
+
 
             utils.CreateTitle();
             utils.CreateEmptySpace(2);
@@ -85,9 +103,7 @@ namespace DriveTools
                             DrivesMenu.LoadDrivesMenu();
                             break;
                         case 1:
-
-                            break;
-                        case 2:
+                            Environment.Exit(0);
                             break;
                     }
                 }
@@ -107,89 +123,5 @@ namespace DriveTools
 
 
 
-    }
-
-    class utils
-    {
-
-        public static void ReDrawMenu(string[] menuItems, int index, bool isDown)
-        {
-            for (int i = 0; i < menuItems.Length; i++)
-            {
-
-            }
-
-        }
-
-        public static void DrawMenu(string[] menuItems, int index, int drawFrom, bool firstDraw, int leftPos, int topPos)
-        {
-            Console.SetCursorPosition(0, drawFrom);
-            for (int i = 0; i < menuItems.Length; i++)
-            {
-                if (i == index)
-                {
-                    utils.bColor(ConsoleColor.White);
-                    utils.tColor(ConsoleColor.Black);
-
-                    Console.WriteLine("- " + menuItems[i]);
-
-                }
-                else
-                {
-                    Console.ResetColor();
-                    //utils.tColor(ConsoleColor.White);
-
-                    Console.WriteLine(menuItems[i] + "    ");
-                }
-            }
-            if (!firstDraw) Console.SetCursorPosition(leftPos, topPos);
-            Console.ResetColor();
-        }
-
-
-        public static void CreateTitle()
-        {
-            tColor(ConsoleColor.Green);
-            Console.WriteLine("██████╗░██████╗░██╗██╗░░░██╗███████╗  ████████╗░█████╗░░█████╗░██╗░░░░░");
-            Console.WriteLine("██╔══██╗██╔══██╗██║██║░░░██║██╔════╝  ╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░");
-            Console.WriteLine("██║░░██║██████╔╝██║╚██╗░██╔╝█████╗░░  ░░░██║░░░██║░░██║██║░░██║██║░░░░░");
-            Console.WriteLine("██║░░██║██╔══██╗██║░╚████╔╝░██╔══╝░░  ░░░██║░░░██║░░██║██║░░██║██║░░░░░");
-            Console.WriteLine("██████╔╝██║░░██║██║░░╚██╔╝░░███████╗  ░░░██║░░░╚█████╔╝╚█████╔╝███████╗");
-            Console.WriteLine("╚═════╝░╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚══════╝  ░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝");
-
-        }
-
-        public static void ClearPreviosLine()
-        {
-            Console.SetCursorPosition(0, Console.CursorTop - 1);
-            Console.Write(new string(' ', Console.WindowWidth));
-            Console.SetCursorPosition(0, Console.CursorTop - 1);
-        }
-
-        public static void ClearCurrentLine()
-        {
-            Console.SetCursorPosition(0, Console.CursorTop);
-            Console.Write("  ");
-            Console.SetCursorPosition(0, Console.CursorTop);
-
-        }
-
-        public static void CreateEmptySpace(int lines)
-        {
-            for (int i = 0; i < lines; i++)
-            {
-                Console.WriteLine("");
-            }
-        }
-
-        public static void tColor(ConsoleColor color)
-        {
-            Console.ForegroundColor = color;
-        }
-
-        public static void bColor(ConsoleColor color)
-        {
-            Console.BackgroundColor = color;
-        }
     }
 }

@@ -1,0 +1,31 @@
+﻿commands:
+    back:
+       active: true
+       description: "back - Go back to the drivers list"
+    files:
+       active: true
+       description: "files(fl) - Get a list of all the files and folders in the current directory"
+    expand:
+       active: true
+       description: "expand(ex,exp) <directory> - Expands to the specified folder and lets you retrive data from there"
+    predi:
+       active: true
+       description: "predi(pd) - Go back to the previous directory"
+    delete:
+       active: true
+       description: "delete(del) <file/directory) - Delete specified file/folder"
+    create:
+       active: false
+       description: "create(crt) <extension> - Creates a file with the specified extension"
+    el:
+       active: false
+       description: "List Encryption Formats"
+    encrypt:
+       active: false
+       description: "encrypt(enc) <Encryption Type> <file> - Encrypts a file | NOTE: On mac only text inside the files could be encrypted"
+    decrypt:
+       active: false
+       description: "decrypt(enc) Optional<Decryption Type> <file> - Tries to decrypt a file with avalible decryption methods a file | Optional: You could specify a decryption format"
+    mail:
+       active: false
+       description: "mail(m) <file> <To> - Sends a mail to specified addresess containing the file"
