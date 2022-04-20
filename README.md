@@ -26,7 +26,7 @@ In order to create a command that would be easy to access and to read,
 first of all you will need to create a new file inside the commands folder.
 <img src="https://i.ibb.co/kSFmKtz/Create-ACommand-File.jpg" alt="commandCreating"/>
 Once you created the command file make it extend the CommandListener class as showed in the example
-```
+```csharp
 public class TestCommand : CommandListener
 ```
 The **CommandListener** class allows the program to track changes across all commands and allows you
@@ -41,7 +41,7 @@ In order to regster the command go to the **Program.cs** file and into the **Loa
 inside add the following lines in order to register the command:<br>
 <a href="https://i.ibb.co/b35LwC7/Command-In-Action.png">Command Example</a>
 
-```
+```csharp
  public static void LoadCommands()
  {
       // Commands
